@@ -1,14 +1,17 @@
 Triangle Classifier 
 
 Project Overview:
+
 The project validates triangles based on their three side lengths. It identifies invalid triangles, equilateral, isosceles, and scalene triangles, and flags right triangles by adding the "Right " prefix to their classification.
 
 The following test covers:
+
 Triangle inequality boundary cases, such as (1, 1, 2), which must return "Invalid".
 Equilateral, isosceles, and scalene classifications.
 Right triangles, including checking that the result includes the "Right " prefix.
 
 How to run the project: 
+
 Install the following dependencies:
 python -m pip install -r requirements.txt
 Run all tests:
@@ -22,6 +25,10 @@ However, the triangle inequality was not satisfied for Isocceles because the thi
 3. In test_triangle.py Copilot suggested (1, 2, 3) == "Scalene" 
 Edited to (2, 3, 4) because (1, 2, 3) does not form a triangle. 
 4. In test_triangle.py, edited prefix to "Right Scalene" instead of "Right" which Copilot suggested inititally. 
+
+Implementation Note:
+
+An Equilateral triangle can never be classified as a right triangle because an equilaterl triangle has three equal angles which measure 60 degrees. In order for a triangle to be right it must measure 90 degrees on at least one angle.
 
 Acceptance Criteria:
 
